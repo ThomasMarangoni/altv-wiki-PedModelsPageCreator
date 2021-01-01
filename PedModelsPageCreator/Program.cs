@@ -20,12 +20,12 @@ namespace PedModelsPageCreator
             var peds = JsonConvert.DeserializeObject<List<Ped>>(json);
 
             var gallery = File.CreateText("gallery.txt");
-            gallery.WriteLine("<gallery>");
+            gallery.WriteLine("<hovergallery>");
             foreach (var ped in peds)
             {
                 gallery.WriteLine($"Image:{ped.Name.ToLower()}.png|'''Name:'''<br><code>{ped.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>{ped.HexHash}</code><br>'''Type:''' <br><code>{ped.Pedtype}</code><br>'''DLC:'''<br><code>{ped.DlcName}</code>");
             }
-            gallery.WriteLine("</gallery>");
+            gallery.WriteLine("</hovergallery>");
             gallery.WriteLine("Created with [https://github.com/DurtyFree/gta-v-data-dumps GTA V Data Dumps from DurtyFree]");
             gallery.Close();
             Console.WriteLine($"gallery.txt created for {peds.Count} peds.");
