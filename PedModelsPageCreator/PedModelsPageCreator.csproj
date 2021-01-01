@@ -10,6 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="gtav-data-dumps\peds.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="peds.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

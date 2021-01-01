@@ -1,3 +1,6 @@
 [submodule "gtav-data-dumps"]
 	path = gtav-data-dumps
 	url = https://github.com/DurtyFree/gta-v-data-dumps.git
+[submodule "PedModelsPageCreator/gtav-data-dumps"]
+	path = PedModelsPageCreator/gtav-data-dumps
+	url = https://github.com/DurtyFree/gta-v-data-dumps.git
