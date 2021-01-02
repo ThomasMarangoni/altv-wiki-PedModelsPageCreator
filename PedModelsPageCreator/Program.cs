@@ -23,7 +23,7 @@ namespace PedModelsPageCreator
             gallery.WriteLine("<hovergallery>");
             foreach (var ped in peds)
             {
-                gallery.WriteLine($"Image:{ped.Name.ToLower()}.png|'''Name:'''<br><code>{ped.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>0x{ped.HexHash}</code><br>'''Type:''' <br><code>{ped.Pedtype}</code><br>'''DLC:'''<br><code>{ped.DlcName}</code>");
+                gallery.WriteLine($"Image:{ped.Name.ToLower()}.png|'''Name:'''<br><code>{ped.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>0x{ped.HexHash}</code><br>'''Type:''' <br><code>{ped.Pedtype.ToLower()}</code><br>'''DLC:'''<br><code>{ped.DlcName.ToLower()}</code>");
             }
             gallery.WriteLine("</hovergallery>");
             gallery.WriteLine("Created with [https://github.com/DurtyFree/gta-v-data-dumps GTA V Data Dumps from DurtyFree]");
